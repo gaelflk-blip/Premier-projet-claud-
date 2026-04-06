@@ -7,11 +7,16 @@ export const metadata: Metadata = {
   title: "Acatacos — Street Food Mexicaine Artisanale à Bruxelles",
   description: "Tacos artisanaux, tortillas maison, recettes mexicaines authentiques. Retrouvez Acatacos sur les marchés de Bruxelles depuis plus de 8 ans.",
   keywords: "tacos, mexicain, artisanal, Bruxelles, street food, marchés, tortillas maison",
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     title: "Acatacos — Le vrai goût du Mexique à Bruxelles",
     description: "Tacos artisanaux faits maison sur les marchés de Bruxelles depuis plus de 8 ans.",
     type: "website",
     locale: "fr_BE",
+    images: [{ url: '/logo.png', width: 1024, height: 1024, alt: 'Acatacos logo' }],
   },
 };
 
