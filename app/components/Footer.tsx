@@ -35,7 +35,7 @@ export default function Footer() {
               Street food mexicaine artisanale sur les marchés de Bruxelles depuis plus de 8 ans.
             </p>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://www.instagram.com/acatacos?igsh=MWh0aTV0Z3ZjbzU0Mg==" target="_blank" rel="noopener noreferrer" style={{
                 width: '36px', height: '36px',
                 borderRadius: '50%',
                 border: '1px solid rgba(192, 57, 43, 0.4)',
@@ -79,15 +79,15 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                 <MapPin size={15} style={{ color: '#c0392b', flexShrink: 0 }} />
-                <span style={{ color: '#a89880', fontSize: '0.875rem' }}>Marchés de Bruxelles<br />Ixelles · Saint-Gilles</span>
+                <span style={{ color: '#a89880', fontSize: '0.875rem' }}>Marchés de Bruxelles<br />Saint-Gilles · Ixelles · Schaerbeek</span>
               </div>
-              <a href="mailto:acatacos@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
+              <a href="mailto:gaelflk@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
                 <Mail size={15} style={{ color: '#c0392b', flexShrink: 0 }} />
-                <span style={{ color: '#a89880', fontSize: '0.875rem' }}>acatacos@gmail.com</span>
+                <span style={{ color: '#a89880', fontSize: '0.875rem' }}>gaelflk@gmail.com</span>
               </a>
-              <a href="https://wa.me/32000000000" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
+              <a href="https://wa.me/32487385577" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
                 <MessageCircle size={15} style={{ color: '#c0392b', flexShrink: 0 }} />
-                <span style={{ color: '#a89880', fontSize: '0.875rem' }}>WhatsApp</span>
+                <span style={{ color: '#a89880', fontSize: '0.875rem' }}>0487 38 55 77</span>
               </a>
             </div>
           </div>
@@ -99,16 +99,18 @@ export default function Footer() {
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem' }}>
               {[
-                { quartier: 'Ixelles', jours: 'Mercredi & Samedi' },
-                { quartier: 'Saint-Gilles', jours: 'Dimanche' },
+                { quartier: 'Saint-Gilles', lieu: 'Pl. Maurice Van Meenen', jours: 'Lundi · 12h–21h' },
+                { quartier: 'Ixelles', lieu: 'Pl. du Châtelain', jours: 'Mercredi · 12h–19h40' },
+                { quartier: 'Schaerbeek', lieu: 'Pl. du Châtelain', jours: 'Vendredi · 16h–20h30' },
               ].map((m) => (
                 <div key={m.quartier} style={{
-                  padding: '0.875rem',
+                  padding: '0.75rem 0.875rem',
                   border: '1px solid rgba(192, 57, 43, 0.2)',
                   borderRadius: '4px',
                 }}>
                   <div style={{ color: '#f5ede0', fontSize: '0.875rem', fontWeight: 600 }}>{m.quartier}</div>
-                  <div style={{ color: '#a89880', fontSize: '0.8rem', marginTop: '0.25rem' }}>{m.jours}</div>
+                  <div style={{ color: '#a89880', fontSize: '0.75rem', marginTop: '0.15rem' }}>{m.lieu}</div>
+                  <div style={{ color: '#c0392b', fontSize: '0.75rem', marginTop: '0.15rem', fontWeight: 600 }}>{m.jours}</div>
                 </div>
               ))}
             </div>

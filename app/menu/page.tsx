@@ -437,7 +437,7 @@ export default function MenuPage() {
           }}>
             Nous trouver <ArrowRight size={16} />
           </Link>
-          <a href="https://wa.me/32000000000" target="_blank" rel="noopener noreferrer" style={{
+          <a href="https://wa.me/32487385577" target="_blank" rel="noopener noreferrer" style={{
             border: '1px solid rgba(45,106,79,0.5)',
             color: '#f5ede0', padding: '1rem 2.5rem', borderRadius: '3px',
             fontSize: '0.85rem', fontWeight: 600, letterSpacing: '0.1em',
