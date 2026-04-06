@@ -75,7 +75,7 @@ export default function ContactPage() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '3rem' }}>
 
               {/* WhatsApp */}
-              <a href="https://wa.me/32000000000" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://wa.me/32487385577" target="_blank" rel="noopener noreferrer" style={{
                 display: 'flex', alignItems: 'center', gap: '1.25rem',
                 padding: '1.5rem',
                 border: '1px solid rgba(45, 106, 79, 0.3)',
@@ -101,13 +101,13 @@ export default function ContactPage() {
                     Réponse rapide — idéal pour les questions et commandes groupées
                   </div>
                   <div style={{ color: '#2d6a4f', fontSize: '0.8rem', fontWeight: 600, marginTop: '0.4rem' }}>
-                    +32 000 00 00 00
+                    +32 487 38 55 77
                   </div>
                 </div>
               </a>
 
               {/* Email */}
-              <a href="mailto:acatacos@gmail.com" style={{
+              <a href="mailto:gaelflk@gmail.com" style={{
                 display: 'flex', alignItems: 'center', gap: '1.25rem',
                 padding: '1.5rem',
                 border: '1px solid rgba(192, 57, 43, 0.2)',
@@ -132,7 +132,7 @@ export default function ContactPage() {
                     Pour les demandes détaillées ou partenariats
                   </div>
                   <div style={{ color: '#c0392b', fontSize: '0.8rem', fontWeight: 600, marginTop: '0.4rem' }}>
-                    acatacos@gmail.com
+                    gaelflk@gmail.com
                   </div>
                 </div>
               </a>
@@ -159,7 +159,7 @@ export default function ContactPage() {
                     Sur les marchés
                   </div>
                   <div style={{ color: 'rgba(245, 237, 224, 0.5)', fontSize: '0.8rem' }}>
-                    Ixelles · Saint-Gilles · Bruxelles
+                    Saint-Gilles · Ixelles · Schaerbeek
                   </div>
                   <div style={{ color: '#d4a853', fontSize: '0.8rem', fontWeight: 600, marginTop: '0.4rem' }}>
                     Voir les horaires →

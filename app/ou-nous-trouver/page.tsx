@@ -3,26 +3,39 @@ import { MapPin, Clock, Calendar, ArrowRight, MessageCircle } from 'lucide-react
 
 const marches = [
   {
-    quartier: 'Ixelles',
+    quartier: 'Saint-Gilles',
+    lieu: 'Place Maurice Van Meenen',
     ville: 'Bruxelles',
-    description: 'Le marché d\'Ixelles, au cœur du quartier bohème de la capitale. Atmosphère animée, clientèle fidèle et cosmopolite.',
+    description: 'Le marché de la place Maurice Van Meenen, au cœur de Saint-Gilles. Un quartier populaire, chaleureux et diversifié où nos tacos font partie du rituel hebdomadaire.',
     jours: [
-      { jour: 'Mercredi', horaires: '10h00 – 18h00' },
-      { jour: 'Samedi', horaires: '09h00 – 18h00' },
+      { jour: 'Lundi', horaires: '12h00 – 21h00' },
     ],
-    metro: 'Proche métro Porte de Namur / Flagey',
+    metro: 'Proche métro Hôtel des Monnaies',
     accent: '#c0392b',
     emoji: '🏙️',
   },
   {
-    quartier: 'Saint-Gilles',
+    quartier: 'Ixelles',
+    lieu: 'Place du Châtelain',
     ville: 'Bruxelles',
-    description: 'Le marché du dimanche de Saint-Gilles. Un quartier chaleureux, populaire et diversifié où nos tacos font partie du rituel hebdomadaire.',
+    description: 'Le marché du Châtelain à Ixelles — l\'un des plus animés de Bruxelles. Atmosphère bohème, clientèle fidèle et cosmopolite. Dernière commande à 19h40.',
     jours: [
-      { jour: 'Dimanche', horaires: '09h00 – 16h00' },
+      { jour: 'Mercredi', horaires: '12h00 – 19h40*' },
     ],
-    metro: 'Proche métro Hôtel des Monnaies',
+    metro: 'Proche métro Louise / tram Châtelain',
     accent: '#d35400',
+    emoji: '🌿',
+  },
+  {
+    quartier: 'Schaerbeek',
+    lieu: 'Place du Châtelain',
+    ville: 'Bruxelles',
+    description: 'Le marché du vendredi soir à Schaerbeek. Une ambiance conviviale de fin de semaine, idéale pour un repas mexicain après le travail.',
+    jours: [
+      { jour: 'Vendredi', horaires: '16h00 – 20h30' },
+    ],
+    metro: 'Proche métro Diamant / Meiser',
+    accent: '#2d6a4f',
     emoji: '🏘️',
   },
 ];
@@ -67,7 +80,7 @@ export default function OuNousTrouverPage() {
             color: 'rgba(245, 237, 224, 0.55)',
             fontSize: '1.05rem', maxWidth: '500px', lineHeight: 1.7,
           }}>
-            Retrouvez-nous sur les marchés de Bruxelles chaque semaine. Ixelles et Saint-Gilles — deux quartiers, une même passion.
+            Retrouvez-nous 3 fois par semaine sur les marchés de Bruxelles — Saint-Gilles, Ixelles et Schaerbeek. Une même passion, trois rendez-vous.
           </p>
         </div>
       </section>
@@ -109,9 +122,13 @@ export default function OuNousTrouverPage() {
                   <p style={{ color: 'rgba(245, 237, 224, 0.6)', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: '1.25rem', maxWidth: '380px' }}>
                     {m.description}
                   </p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
                     <MapPin size={14} style={{ color: m.accent, flexShrink: 0 }} />
-                    <span style={{ color: 'rgba(245, 237, 224, 0.45)', fontSize: '0.8rem' }}>{m.metro}</span>
+                    <span style={{ color: '#f5ede0', fontSize: '0.85rem', fontWeight: 600 }}>{m.lieu}</span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <MapPin size={14} style={{ color: 'transparent', flexShrink: 0 }} />
+                    <span style={{ color: 'rgba(245, 237, 224, 0.4)', fontSize: '0.78rem' }}>{m.metro}</span>
                   </div>
                 </div>
 
@@ -150,7 +167,7 @@ export default function OuNousTrouverPage() {
                     color: 'rgba(245, 237, 224, 0.35)', fontSize: '0.75rem',
                     marginTop: '0.875rem', fontStyle: 'italic',
                   }}>
-                    * Horaires pouvant varier selon conditions météo et événements. Suivez-nous pour les mises à jour.
+                    * Dernière commande à 19h40 le mercredi. Horaires pouvant varier selon météo. Contactez-nous pour confirmer.
                   </p>
                 </div>
               </div>
@@ -236,7 +253,7 @@ export default function OuNousTrouverPage() {
           Contactez-nous sur WhatsApp pour confirmer notre présence ou pour les commandes de groupe.
         </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center' }}>
-          <a href="https://wa.me/32000000000" target="_blank" rel="noopener noreferrer" style={{
+          <a href="https://wa.me/32487385577" target="_blank" rel="noopener noreferrer" style={{
             backgroundColor: '#2d6a4f', color: '#f5ede0',
             padding: '1rem 2.5rem', borderRadius: '3px',
             fontSize: '0.85rem', fontWeight: 600, letterSpacing: '0.1em',
