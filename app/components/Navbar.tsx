@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
@@ -44,27 +45,19 @@ export default function Navbar() {
       >
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           {/* Logo */}
-          <Link href="/" style={{ textDecoration: 'none' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
-              <span style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: '1.5rem',
-                fontWeight: 900,
-                color: '#f5ede0',
-                letterSpacing: '-0.02em',
-              }}>
-                ACA<span style={{ color: '#c0392b' }}>TACOS</span>
-              </span>
-              <span style={{
-                fontSize: '0.6rem',
-                letterSpacing: '0.25em',
-                textTransform: 'uppercase',
-                color: '#a89880',
-                marginTop: '1px',
-              }}>
-                Bruxelles · Artisanal
-              </span>
-            </div>
+          <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+            <Image
+              src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
+              alt="Acatacos — Street food mexicaine artisanale à Bruxelles"
+              width={scrolled ? 48 : 56}
+              height={scrolled ? 48 : 56}
+              style={{
+                objectFit: 'contain',
+                transition: 'all 0.4s ease',
+                filter: 'drop-shadow(0 2px 8px rgba(192,57,43,0.3))',
+              }}
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
@@ -140,14 +133,13 @@ export default function Navbar() {
         transition: 'transform 0.4s ease',
       }}>
         <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
-          <span style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: '2rem',
-            fontWeight: 900,
-            color: '#f5ede0',
-          }}>
-            ACA<span style={{ color: '#c0392b' }}>TACOS</span>
-          </span>
+          <Image
+            src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
+            alt="Acatacos"
+            width={90}
+            height={90}
+            style={{ objectFit: 'contain', filter: 'drop-shadow(0 2px 12px rgba(192,57,43,0.4))' }}
+          />
         </div>
         {links.map((l) => (
           <Link

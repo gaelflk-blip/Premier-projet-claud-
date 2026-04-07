@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Clock, Star, Flame, Heart, ChefHat, MapPin } from 'lucide-react';
 
 const produits = [
@@ -158,12 +159,24 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* Logo watermark */}
         <div style={{
-          position: 'absolute', right: '-5%', top: '50%', transform: 'translateY(-50%)',
-          fontSize: 'clamp(8rem, 20vw, 22rem)',
-          opacity: 0.05, userSelect: 'none', lineHeight: 1,
+          position: 'absolute',
+          right: '-2%',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          opacity: 0.07,
+          userSelect: 'none',
+          pointerEvents: 'none',
         }}>
-          🌮
+          <Image
+            src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
+            alt=""
+            width={500}
+            height={500}
+            style={{ objectFit: 'contain' }}
+            aria-hidden="true"
+          />
         </div>
 
         <div style={{

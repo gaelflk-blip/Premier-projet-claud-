@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, MapPin } from 'lucide-react';
 
 const timeline = [
@@ -102,7 +103,13 @@ export default function AProposPage() {
                 position: 'absolute', inset: 0,
                 background: 'radial-gradient(ellipse at center, rgba(192,57,43,0.1) 0%, transparent 70%)',
               }} />
-              <span style={{ fontSize: '5rem', opacity: 0.6 }}>👨‍🍳</span>
+              <Image
+              src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
+              alt="Acatacos"
+              width={160}
+              height={160}
+              style={{ objectFit: 'contain', opacity: 0.85, filter: 'drop-shadow(0 4px 16px rgba(192,57,43,0.3))' }}
+            />
               <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
                 <div style={{
                   fontFamily: "'Playfair Display', serif",
