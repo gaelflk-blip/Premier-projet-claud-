@@ -104,7 +104,7 @@ export default function AProposPage() {
                 background: 'radial-gradient(ellipse at center, rgba(192,57,43,0.1) 0%, transparent 70%)',
               }} />
               <Image
-              src="/logo.png"
+              src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
               alt="Acatacos"
               width={160}
               height={160}

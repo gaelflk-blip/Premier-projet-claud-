@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <div style={{ marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.875rem' }}>
               <Image
-                src="/logo.png"
+                src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
                 alt="Acatacos"
                 width={52}
                 height={52}

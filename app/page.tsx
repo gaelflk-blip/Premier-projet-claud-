@@ -170,7 +170,7 @@ export default function HomePage() {
           pointerEvents: 'none',
         }}>
           <Image
-            src="/logo.png"
+            src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
             alt=""
             width={500}
             height={500}

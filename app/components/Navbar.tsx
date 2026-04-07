@@ -47,7 +47,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
             <Image
-              src="/logo.png"
+              src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
               alt="Acatacos — Street food mexicaine artisanale à Bruxelles"
               width={scrolled ? 48 : 56}
               height={scrolled ? 48 : 56}
@@ -134,7 +134,7 @@ export default function Navbar() {
       }}>
         <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
           <Image
-            src="/logo.png"
+            src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
             alt="Acatacos"
             width={90}
             height={90}
