@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://acatacos.be'),
   title: "Acatacos — Street Food Mexicaine Artisanale à Bruxelles",
   description: "Tacos artisanaux, tortillas maison, recettes mexicaines authentiques. Retrouvez Acatacos sur les marchés de Bruxelles depuis plus de 8 ans.",
   keywords: "tacos, mexicain, artisanal, Bruxelles, street food, marchés, tortillas maison",
