@@ -18,25 +18,15 @@ export default function Footer() {
         }}>
           {/* Brand */}
           <div>
-            <div style={{ marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.875rem' }}>
+            <div style={{ marginBottom: '1.25rem' }}>
               <Image
-                src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
+                src="/67E18DF9-0FCF-414E-9E80-FF932405E769.png"
                 alt="Acatacos"
-                width={52}
-                height={52}
-                style={{ objectFit: 'contain', filter: 'drop-shadow(0 1px 6px rgba(192,57,43,0.25))' }}
+                width={110}
+                height={110}
+                style={{ objectFit: 'contain', filter: 'drop-shadow(0 2px 10px rgba(192,57,43,0.2))' }}
               />
-              <div>
-                <span style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: '1.4rem',
-                  fontWeight: 900,
-                  color: '#f5ede0',
-                  display: 'block',
-                  lineHeight: 1.1,
-                }}>
-                  ACA<span style={{ color: '#c0392b' }}>TACOS</span>
-                </span>
+              <div style={{ marginTop: '0.5rem' }}>
                 <span style={{ fontSize: '0.6rem', letterSpacing: '0.2em', color: '#a89880', textTransform: 'uppercase' }}>
                   Bruxelles · Artisanal
                 </span>

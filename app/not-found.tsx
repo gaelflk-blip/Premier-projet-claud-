@@ -29,7 +29,7 @@ export default function NotFound() {
         {/* Logo */}
         <div style={{ marginBottom: '2rem' }}>
           <Image
-            src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
+            src="/67E18DF9-0FCF-414E-9E80-FF932405E769.png"
             alt="Acatacos"
             width={120}
             height={120}
