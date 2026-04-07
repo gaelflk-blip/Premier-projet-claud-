@@ -47,14 +47,14 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
             <Image
-              src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
+              src="/67E18DF9-0FCF-414E-9E80-FF932405E769.png"
               alt="Acatacos — Street food mexicaine artisanale à Bruxelles"
-              width={scrolled ? 48 : 56}
-              height={scrolled ? 48 : 56}
+              width={scrolled ? 58 : 72}
+              height={scrolled ? 58 : 72}
               style={{
                 objectFit: 'contain',
                 transition: 'all 0.4s ease',
-                filter: 'drop-shadow(0 2px 8px rgba(192,57,43,0.3))',
+                filter: 'drop-shadow(0 2px 10px rgba(192,57,43,0.25))',
               }}
               priority
             />
@@ -134,11 +134,11 @@ export default function Navbar() {
       }}>
         <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
           <Image
-            src="/432CE605-6B45-4EFF-8074-737E5DCEA83A.png"
+            src="/67E18DF9-0FCF-414E-9E80-FF932405E769.png"
             alt="Acatacos"
-            width={90}
-            height={90}
-            style={{ objectFit: 'contain', filter: 'drop-shadow(0 2px 12px rgba(192,57,43,0.4))' }}
+            width={130}
+            height={130}
+            style={{ objectFit: 'contain', filter: 'drop-shadow(0 4px 20px rgba(192,57,43,0.35))' }}
           />
         </div>
         {links.map((l) => (
