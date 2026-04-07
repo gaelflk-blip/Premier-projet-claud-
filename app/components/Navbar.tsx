@@ -54,7 +54,7 @@ export default function Navbar() {
               style={{
                 objectFit: 'contain',
                 transition: 'all 0.4s ease',
-                filter: 'drop-shadow(0 2px 10px rgba(192,57,43,0.25))',
+                mixBlendMode: 'multiply',
               }}
               priority
             />
@@ -138,7 +138,7 @@ export default function Navbar() {
             alt="Acatacos"
             width={130}
             height={130}
-            style={{ objectFit: 'contain', filter: 'drop-shadow(0 4px 20px rgba(192,57,43,0.35))' }}
+            style={{ objectFit: 'contain', mixBlendMode: 'multiply' }}
           />
         </div>
         {links.map((l) => (

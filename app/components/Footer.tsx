@@ -24,7 +24,7 @@ export default function Footer() {
                 alt="Acatacos"
                 width={110}
                 height={110}
-                style={{ objectFit: 'contain', filter: 'drop-shadow(0 2px 10px rgba(192,57,43,0.2))' }}
+                style={{ objectFit: 'contain', mixBlendMode: 'multiply' }}
               />
               <div style={{ marginTop: '0.5rem' }}>
                 <span style={{ fontSize: '0.6rem', letterSpacing: '0.2em', color: '#a89880', textTransform: 'uppercase' }}>
